@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Thread extends Model
 {
+    protected $connection = 'account';
+
     protected $fillable = ['reference', 'subject'];
 
     public function messages()
